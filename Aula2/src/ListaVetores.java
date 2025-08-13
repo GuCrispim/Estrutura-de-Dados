@@ -31,6 +31,7 @@ public class ListaVetores {
 
     Integer removePosicao(int pos) {
         if (pos < 0 || pos >= qt) return null;
+        Integer temp = dados[pos];
 
         for(int i = pos + 1; i<qt; i++){
             dados[i-1] = dados[i];
