@@ -6,7 +6,14 @@ public class ListaVetoresTeste {
         lista.insere(88);
         lista.insere(99);
         lista.insere(100);
-
+        System.out.println(lista.removeFinal());
         lista.imprime();
+        lista.insere(333);
+        lista.insere(999);
+        lista.insere(55);
+        lista.insere(22);
+        lista.insere(44);
+        lista.imprime();
+
     }
 }
