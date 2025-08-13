@@ -6,5 +6,7 @@ public class ListaVetoresTeste {
         lista.insere(88);
         lista.insere(99);
         lista.insere(100);
+
+        lista.imprime();
     }
 }

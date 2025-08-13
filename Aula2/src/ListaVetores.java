@@ -1,9 +1,9 @@
 public class ListaVetores {
-        private int[] dados;
+        private Integer[] dados;
         private int qt;
 
         ListaVetores(int tam){
-            dados = new int[tam];
+            dados = new Integer[tam];
             qt = 0;
         }
 
@@ -17,8 +17,16 @@ public class ListaVetores {
         void imprime(){
 
             for(int i = 0; i < qt; i++) {
-                System.out.println(dados[i] + " -> ");
+                System.out.print(dados[i] + " -> ");
             }
-            System.out.println();
         }
+
+        Integer removeFinal(){
+            if(qt == 0) return null;
+            Integer temp = dados[qt - 1];
+            qt --;
+            return temp;
+
+        }
+
     }
