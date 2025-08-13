@@ -26,6 +26,9 @@ public class ListaVetores {
         if (qt == 0) return null;
         Integer temp = dados[qt - 1];
         qt--;
+
+        if(qt > 0 && qt == dados.length/4)
+            redireciona(dados.length/2);
         return temp;
 
     }
@@ -46,6 +49,8 @@ public class ListaVetores {
             dados[i-1] = dados[i];
             qt--;
         }
+        if(qt > 0 && qt == dados.length/4)
+            redireciona(dados.length/2);
         return temp;
     }
 }
