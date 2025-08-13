@@ -8,10 +8,11 @@ public class ListaVetores {
     }
 
     void insere(int valor) {
-        if (qt < dados.length) {
-            dados[qt] = valor;
-            qt++;
-        }
+        if (qt < dados.length) redireciona(dados.length - 2);
+
+        dados[qt] = valor;
+        qt++;
+
     }
 
     void imprime() {
