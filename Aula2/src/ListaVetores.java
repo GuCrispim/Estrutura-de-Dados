@@ -16,7 +16,7 @@ public class ListaVetores {
     }
 
     void imprime() {
-
+        System.out.println("Tamanho: " + dados.length);
         for (int i = 0; i < qt; i++) {
             System.out.print(dados[i] + " -> ");
         }
