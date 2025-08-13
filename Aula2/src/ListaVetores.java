@@ -28,6 +28,14 @@ public class ListaVetores {
         return temp;
 
     }
+    void redireciona(int max){
+        Integer temp[] = new Integer[max];
+        for (int i = 0; i < qt; i++){
+            temp[i] = dados[i];
+
+            dados = temp;
+        }
+    }
 
     Integer removePosicao(int pos) {
         if (pos < 0 || pos >= qt) return null;
