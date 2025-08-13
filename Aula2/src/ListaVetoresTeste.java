@@ -7,6 +7,7 @@ public class ListaVetoresTeste {
         lista.insere(99);
         lista.insere(100);
         System.out.println(lista.removeFinal());
+        System.out.println();
         lista.imprime();
         lista.insere(333);
         lista.insere(999);
